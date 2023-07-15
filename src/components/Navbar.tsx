@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { State } from "@/redux/Store";
 
 const Navbar = ({ handleCartSidebar, handleMenuSidebar }: NavbarButton) => {
+  
   const navbarRef = useRef() as React.MutableRefObject<HTMLInputElement>;
   const totalQuantity = useSelector((state: State) => state.cart.totalQuantity);
 

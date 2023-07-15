@@ -28,7 +28,8 @@ export interface TitleProps {
 
 export interface ProductCardProps {
     data: ProductDataType,
-    prodCategory: string
+    prodCategory?: string,
+    setOpen?: React.Dispatch<React.SetStateAction<boolean>> 
 }
   
 export interface ButtonProps {
