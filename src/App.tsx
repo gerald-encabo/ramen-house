@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartSidebar from '@/components/CartSidebar';
 import MenuSidebar from '@/components/MenuSidebar';
-import Home from '@/pages/Home'
+import Main from '@/pages/Main'
 import '@/styles/globalStyle.scss';
 
 const Layout = () => {
@@ -35,11 +35,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home/>
+        element: <Main />
       },
       {
         path: '*',
-        element: <Home/>
+        element: <Main />
       },
     ]
   },
