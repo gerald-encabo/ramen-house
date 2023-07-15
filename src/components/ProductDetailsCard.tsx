@@ -36,9 +36,9 @@ const ProductDetailsCard = ({data, setOpen}: ProductCardProps) => {
           </div>
           <div className="tile-right-side">
             <p className="tile-title">{data.name}</p>
-            <p className="tile-desc">{data.desc}</p>
+            <p className="tile-desc"><span>Ingredients:</span> {data.desc}</p>
             <p className="tile-category"><span>Category:</span> {data.category}</p>
-            <p className="tile-price"><span>Price:</span> {data.price}</p>
+            <p className="tile-price"><span>Price:</span> ${data.price}</p>
             <div onClick={addToCart}>
                 <Button button="Add to Cart" />
               </div>
