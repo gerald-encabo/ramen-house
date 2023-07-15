@@ -31,7 +31,7 @@ export const menuList: Array<ProductDataType> = [
     img: dessert1,
     alt: 'Dessert',
     name: 'KUROGOMA CHEESECAKE',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit',
     price: 5,
     category: 'Dessert'
   },
@@ -40,7 +40,7 @@ export const menuList: Array<ProductDataType> = [
     img: dessert2,
     alt: 'Dessert',
     name: 'MATCHA CHEESECAKE',
-    desc: 'Laudantium esse recusandae, voluptatum quos sed tempora',
+    desc: 'Laudantium esse recusandae, voluptatum quos sed tempora laudantium esse recusandae, voluptatum quos sed tempora laudantium esse recusandae, voluptatum quos sed tempora',
     price: 5,
     category: 'Dessert'
   },
@@ -49,7 +49,7 @@ export const menuList: Array<ProductDataType> = [
     img: dessert3,
     alt: 'Dessert',
     name: 'MATCHA ICE CREAM',
-    desc: 'Iste debitis molestias, totam sapiente velit eius',
+    desc: 'Iste debitis molestias, totam sapiente velit eius debitis molestias, totam sapiente velit eius debitis molestias, totam sapiente velit eius',
     price: 5,
     category: 'Dessert'
     
@@ -59,7 +59,7 @@ export const menuList: Array<ProductDataType> = [
     img: side1,
     alt: 'Side',
     name: 'ORIGINAL KARAAGE',
-    desc: 'Laborum aspernatur voluptatem officia doloremque quis iusto esse qui totam eveniet',
+    desc: 'Laborum aspernatur voluptatem officia doloremque quis iusto esse qui totam eveniet aspernatur voluptatem officia doloremque quis iusto esse qui totam eveniet aspernatur voluptatem officia doloremque quis iusto esse qui totam eveniet',
     price: 7,
     category: 'Side'
   },
@@ -68,7 +68,7 @@ export const menuList: Array<ProductDataType> = [
     img: side2,
     alt: 'Side',
     name: 'AGE GYOZA (PORK/VEG)',
-    desc: 'Rerum at expedita excepturi velit veritatis nulla quis vero error',
+    desc: 'Rerum aspernatur ipsum dolor, sit amet consectetur adipisicing elit voluptatem officia doloremque quis iusto esse qui totam eveniet at expedita excepturi velit veritatis nulla quis vero error',
     price: 4.50,
     category: 'Side'
   },
@@ -77,7 +77,7 @@ export const menuList: Array<ProductDataType> = [
     img: side3,
     alt: 'Side',
     name: 'TAKOYAKI',
-    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    desc: 'Lorem ipsum dolor, porro dolorem quae cumque placeat similique dolor nulla totam porro dolorem quae cumque placeat similique dolor nulla totam sit amet consectetur adipisicing elit.',
     price: 5.50,
     category: 'Side'
   },
@@ -86,7 +86,7 @@ export const menuList: Array<ProductDataType> = [
     img: ramen1,
     alt: 'Pork Ramen',
     name: 'PORK ORIGINAL',
-    desc: 'Unde porro dolorem quae cumque placeat similique dolor nulla totam',
+    desc: 'Unde porro dolorem unde quidem laborum accusantium quae cumque placeat unde quidem laborum accusantium similique dolor nulla totam',
     price: 12.95,
     category: 'Ramen'
   },
@@ -95,7 +95,7 @@ export const menuList: Array<ProductDataType> = [
     img: ramen2,
     alt: 'Pork Ramen',
     name: 'PORK MISO',
-    desc: 'Non unde quidem laborum accusantium',
+    desc: 'Non unde xpedita excepturi velit veritatis nulla quis vero error xpedita excepturi velit veritatis nulla quis vero error quidem laborum accusantium',
     price: 12.95,
     category: 'Ramen'
   },
@@ -104,7 +104,7 @@ export const menuList: Array<ProductDataType> = [
     img: ramen3,
     alt: 'Chicken Ramen',
     name: 'CHICKEN ORIGINAL',
-    desc: 'At expedita excepturi velit veritatis nulla quis vero error',
+    desc: 'At rem libero minus quis, consequuntur praesentium illo nobis expedita excepturi velit rem libero minus quis, consequuntur praesentium illo nobis veritatis nulla quis vero error',
     price: 12.95,
     category: 'Ramen'
   },
@@ -113,7 +113,7 @@ export const menuList: Array<ProductDataType> = [
     img: ramen4,
     alt: 'Chicken Ramen',
     name: 'CHICKEN MISO',
-    desc: 'Tempora rem libero minus quis, consequuntur praesentium illo nobis',
+    desc: 'Tempora aspernatur voluptatem officia doloremque quis iusto esse qui totam eveniet rem libero minus quis, aspernatur voluptatem officia doloremque quis iusto esse qui totam eveniet consequuntur praesentium illo nobis',
     price: 12.95,
     category: 'Ramen'
   },
@@ -122,7 +122,7 @@ export const menuList: Array<ProductDataType> = [
     img: ramen5,
     alt: 'Vegetarian Ramen',
     name: 'VEG ORIGINAL',
-    desc: 'aborum aspernatur voluptatem officia doloremque quis iusto esse qui totam eveniet',
+    desc: 'Aborum officiis nisi placeat quasi consectetur distinctio ratione officiis nisi placeat quasi consectetur distinctio ratione aspernatur voluptatem officia doloremque quis iusto esse qui totam eveniet',
     price: 10.95,
     category: 'Ramen'
   },
@@ -131,7 +131,7 @@ export const menuList: Array<ProductDataType> = [
     img: ramen6,
     alt: 'Vegetarian Ramen',
     name: 'VEG MISO',
-    desc: 'Ut officiis nisi placeat quasi consectetur distinctio ratione',
+    desc: 'Ut porro illo atque. Optio cumque ratione labore nihil eligendi veritatis recusandae officiis nisi placeat quasi consectetur distinctio ratione porro illo atque. Optio cumque ratione labore nihil eligendi veritatis recusandae',
     price: 10.95,
     category: 'Ramen'
   },
@@ -140,7 +140,7 @@ export const menuList: Array<ProductDataType> = [
     img: weeklySpecial1,
     alt: 'Weekly Special',
     name: 'CHILLED TSUKEMEN',
-    desc: 'Repudiandae porro illo atque. Optio cumque ratione labore nihil eligendi veritatis recusandae',
+    desc: 'Repudiandae odit eum quas beatae ut officiis nisi placeat quasi consectetur distinctio odit eum quas beatae ut officiis nisi placeat quasi consectetur distinctio porro illo atque. Optio cumque ratione labore nihil eligendi veritatis recusandae',
     price: 14.95,
     category: 'Weekly Special'
   },
@@ -149,7 +149,7 @@ export const menuList: Array<ProductDataType> = [
     img: weeklySpecial2,
     alt: 'Weekly Special',
     name: 'TONKOTSU RED',
-    desc: 'Sapiente odit eum quas beatae ut officiis nisi placeat quasi consectetur distinctio',
+    desc: 'Sapiente cupiditate dicta fugit recusandae reiciendis, iusto eos nihil eum placeat e cupiditate dicta fugit recusandae reiciendis, iusto eos nihil eum placeat e odit eum quas beatae ut officiis nisi placeat quasi consectetur distinctio',
     price: 9.99,
     category: 'Weekly Special'
   },
@@ -158,7 +158,7 @@ export const menuList: Array<ProductDataType> = [
     img: weeklySpecial3,
     alt: 'Weekly  Special',
     name: 'IMMUNE BOOSTER RAMEN',
-    desc: 'Dolor cupiditate dicta fugit recusandae reiciendis, iusto eos nihil eum placeat e',
+    desc: 'Dolor natus provident veritatis cupiditate dicta fugit recusandae reiciendis, natus provident veritatis cupiditate dicta fugit recusandae reiciendis, cupiditate dicta fugit recusandae reiciendis, iusto eos nihil eum placeat e',
     price: 14.95,
     category: 'Weekly Special'
   },
@@ -167,7 +167,7 @@ export const menuList: Array<ProductDataType> = [
     img: drink1,
     alt: 'Drink',
     name: 'HOT TEA',
-    desc: 'Mollitia omnis iusto',
+    desc: 'Mollitia natus provident veritatis cupiditate dicta fugit recusandae reiciendis, iusto eos nihil eum placeat e  omnis iusto',
     price: 2,
     category: 'Drink'
   },
@@ -176,7 +176,7 @@ export const menuList: Array<ProductDataType> = [
     img: drink2,
     alt: 'Drink',
     name: 'RAMUNE SODA',
-    desc: 'Placeat natus provident veritatis',
+    desc: 'Placeat natus provident veritatis natus provident veritatis cupiditate dicta fugit recusandae reiciendis, natus provident veritatis cupiditate dicta fugit recusandae reiciendis',
     price: 3.9,
     category: 'Drink'
   },
@@ -185,7 +185,7 @@ export const menuList: Array<ProductDataType> = [
     img: drink3,
     alt: 'Drink',
     name: 'HOT SAKE',
-    desc: 'Consequuntur praesentium illo nobis',
+    desc: 'Consequuntur natus natus provident veritatis cupiditate dicta fugit recusandae reiciendis provident veritatis cupiditate dicta fugit recusandae reiciendis, praesentium illo nobis',
     price: 7.95,
     category: 'Drink'
   },

@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartSidebar from '@/components/CartSidebar';
 import MenuSidebar from '@/components/MenuSidebar';
-import ProductDisplay from '@/pages/ProductDisplay';
 import Home from '@/pages/Home'
 import '@/styles/globalStyle.scss';
 
@@ -20,9 +19,9 @@ const Layout = () => {
     <div>
       <Navbar handleCartSidebar={handleCartSidebar} handleMenuSidebar={handleMenuSidebar}/>
       {/* Cart Sidebar */}
-      { toggleCartSidebar && <CartSidebar handleCartSidebar={handleCartSidebar} /> }
+      { toggleCartSidebar ? <CartSidebar handleCartSidebar={handleCartSidebar} /> : null }
       {/* Menu Sidebar */}
-      { toggleMenuSidebar && <MenuSidebar handleMenuSidebar={handleMenuSidebar} /> }
+      { toggleMenuSidebar ? <MenuSidebar handleMenuSidebar={handleMenuSidebar} /> : null }
       <Outlet />
       <Footer />
     </div>
@@ -37,10 +36,6 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>
-      },
-      {
-        path: '/product/:id',
-        element: <ProductDisplay />
       },
       {
         path: '*',
