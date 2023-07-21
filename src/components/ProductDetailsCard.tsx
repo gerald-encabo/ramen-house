@@ -32,7 +32,7 @@ const ProductDetailsCard = ({data, setOpen}: ProductCardProps) => {
             <FaTimes />
           </div>
           <div className="tile-left-side">
-            <img src={data.img} alt={data.alt} />
+            <img src={data.img} alt={data.alt} loading="lazy" />
           </div>
           <div className="tile-right-side">
             <p className="tile-title">{data.name}</p>

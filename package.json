@@ -14,6 +14,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@types/webrtc": "^0.0.35",
+    "@vercel/analytics": "^1.0.1",
     "axios": "^1.4.0",
     "framer-motion": "^10.12.18",
     "moment": "^2.29.4",

@@ -1,7 +1,7 @@
 import { ProductCardProps, ProductDataType } from "@/types/TypeLists";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { cartActions } from "@/redux/CartSlice";
 import { useDispatch } from "react-redux";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "@/styles/product-card.scss";
 import Button from "@/components/Button";

@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { createBrowserRouter,  RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartSidebar from '@/components/CartSidebar';
 import MenuSidebar from '@/components/MenuSidebar';
 import Main from '@/pages/Main'
 import '@/styles/globalStyle.scss';
+import { Analytics } from '@vercel/analytics/react';
 
 const Layout = () => {
 
@@ -50,6 +51,7 @@ function App() {
   return (
       <div className="App">
           <RouterProvider router={router} />
+          <Analytics />
       </div>
   )
 }
