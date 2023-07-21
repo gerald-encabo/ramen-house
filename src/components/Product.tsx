@@ -1,8 +1,8 @@
 import { ProductProps, ProductDataType } from "@/types/TypeLists";
-import Title from "@/components/Title";
-import ProductCard from "@/components/ProductCard";
-import "@/styles/product.scss";
 import { menuList } from '@/assets/data/productLists'
+import ProductCard from "@/components/ProductCard";
+import Title from "@/components/Title";
+import "@/styles/product.scss";
 
 const Product = ({id, heading}: ProductProps) => {
 
