@@ -1,12 +1,12 @@
+import '@/styles/globalStyle.scss';
 import { useState } from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartSidebar from '@/components/CartSidebar';
 import MenuSidebar from '@/components/MenuSidebar';
 import Main from '@/pages/Main'
-import '@/styles/globalStyle.scss';
-import { Analytics } from '@vercel/analytics/react';
 
 const Layout = () => {
 

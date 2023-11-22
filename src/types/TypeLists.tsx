@@ -66,5 +66,5 @@ export interface CartSidebarButton {
 }
 
 export interface MenuSidebarButton {
-    handleMenuSidebar: React.MouseEventHandler<HTMLDivElement>
+    handleMenuSidebar: React.MouseEventHandler<HTMLDivElement> | undefined | any
 }
