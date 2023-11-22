@@ -6,6 +6,17 @@ import { MenuSidebarButton, SelectedMenu } from "@/types/TypeLists";
 
 const MenuSideBar = ({handleMenuSidebar}: MenuSidebarButton) => {
 
+  const handleMenuClick = (menuList: string) => {
+    const scrollToId = document.getElementById(menuList.toLowerCase());
+    const locationScroll = scrollToId?.offsetTop!;
+
+    window.scrollTo({
+       left: 0,
+       top: locationScroll - 40,
+       behavior: "smooth",
+    })
+  }
+
     return (
       <div className='menu-sidebar'>
         <div className='menu-sidebar-container' >
@@ -16,45 +27,50 @@ const MenuSideBar = ({handleMenuSidebar}: MenuSidebarButton) => {
               <Link
                 to={SelectedMenu.Special.toLowerCase()}
                 onClick={() => {
-                  const specialOption: HTMLElement | null  = document.getElementById('special');
-                  specialOption && specialOption.scrollIntoView({ behavior: "smooth", block: "start" });
-                }}
+                    handleMenuSidebar();
+                    handleMenuClick(SelectedMenu.Special.toLowerCase());
+                  }
+                }
               >
                 {SelectedMenu.Special}
               </Link>
               <Link
                 to={SelectedMenu.Ramen.toLowerCase()}
                 onClick={() => {
-                  const ramenOption: HTMLElement | null = document.getElementById('ramen');
-                  ramenOption && ramenOption.scrollIntoView({ behavior: "smooth", block: "start" });
-                }}
+                  handleMenuSidebar();
+                  handleMenuClick(SelectedMenu.Ramen.toLowerCase());
+                }
+              }
               >
                 {SelectedMenu.Ramen}
               </Link>
               <Link
                 to={SelectedMenu.Side.toLowerCase()}
                 onClick={() => {
-                  const sideOption: HTMLElement | null = document.getElementById('side');
-                  sideOption && sideOption.scrollIntoView({ behavior: "smooth", block: "start" });
-                }}
+                  handleMenuSidebar();
+                  handleMenuClick(SelectedMenu.Side.toLowerCase());
+                }
+              }
               >
                 {SelectedMenu.Side}
               </Link>
               <Link
                 to={SelectedMenu.Dessert.toLowerCase()}
                 onClick={() => {
-                  const dessertOption: HTMLElement | null = document.getElementById('dessert');
-                  dessertOption && dessertOption.scrollIntoView({ behavior: "smooth", block: "start" });
-                }}
+                  handleMenuSidebar();
+                  handleMenuClick(SelectedMenu.Dessert.toLowerCase());
+                }
+              }
               >
                 {SelectedMenu.Dessert}
               </Link>
               <Link
                 to={SelectedMenu.Drink.toLowerCase()}
                 onClick={() => {
-                  const drinkOption: HTMLElement | null = document.getElementById('drink');
-                  drinkOption && drinkOption.scrollIntoView({ behavior: "smooth", block: "start" });
-                }}
+                  handleMenuSidebar();
+                  handleMenuClick(SelectedMenu.Drink.toLowerCase());
+                }
+              }
               >
                 {SelectedMenu.Drink}
               </Link>
