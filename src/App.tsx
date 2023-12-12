@@ -6,9 +6,9 @@ import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import CartSidebar from '@/components/CartSideBar/CartSidebar';
 import MenuSidebar from '@/components/MenuSideBar/MenuSidebar';
-import Main from '@/pages/Main'
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from './styles/GlobalStyle';
+import { GlobalStyle } from '@/styles/GlobalStyle';
+import Main from '@/pages/Main'
 
 const theme = {
   colors: {
