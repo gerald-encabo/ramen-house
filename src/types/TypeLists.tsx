@@ -6,7 +6,7 @@ export enum SelectedMenu {
     Drink = "Drink"
 }
 
-export interface ProductDataType {
+export interface MenuDataType {
     id: number,
     name: string,
     desc: string,
@@ -17,7 +17,7 @@ export interface ProductDataType {
     category?: string
 }
 
-export interface ProductProps {
+export interface MenuProps {
     id: string,
     heading: string
 }
@@ -26,8 +26,8 @@ export interface TitleProps {
     heading: string
 }
 
-export interface ProductCardProps {
-    data: ProductDataType,
+export interface MenuCardProps {
+    data: MenuDataType,
     prodCategory?: string,
     setOpen?: React.Dispatch<React.SetStateAction<boolean>> 
 }
