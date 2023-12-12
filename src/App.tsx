@@ -1,12 +1,28 @@
-import '@/styles/globalStyle.scss';
 import { useState } from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import CartSidebar from '@/components/CartSidebar';
-import MenuSidebar from '@/components/MenuSidebar';
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from './styles/GlobalStyle';
 import Main from '@/pages/Main'
+import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
+import CartSidebar from '@/components/CartSideBar/CartSidebar';
+import MenuSidebar from '@/components/MenuSideBar/MenuSidebar';
+
+const theme = {
+  colors: {
+    primary: '#fddb00',
+    secondary: '#150f0f',
+    tertiary: '#282626',
+    dark: '#000',
+    light: '#fff'
+  },
+  mediaQuery: {
+    mobile: '576px',
+    tablet: '768px',
+    laptop: '1024px'
+  }
+}
 
 const Layout = () => {
 
@@ -17,7 +33,8 @@ const Layout = () => {
   const handleMenuSidebar = () => setToggleMenuSidebar(!toggleMenuSidebar);
 
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <Navbar handleCartSidebar={handleCartSidebar} handleMenuSidebar={handleMenuSidebar}/>
       {/* Cart Sidebar */}
       { toggleCartSidebar ? <CartSidebar handleCartSidebar={handleCartSidebar} /> : null }
@@ -25,7 +42,7 @@ const Layout = () => {
       { toggleMenuSidebar ? <MenuSidebar handleMenuSidebar={handleMenuSidebar} /> : null }
       <Outlet />
       <Footer />
-    </div>
+    </ThemeProvider>
   )
 }
 
