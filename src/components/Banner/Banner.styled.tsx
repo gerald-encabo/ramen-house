@@ -4,7 +4,8 @@ export const BannerSection = styled.section`
     height: 100vh;
     background-color: ${({theme}) => theme.colors.dark };
     padding: 0rem calc((100vw - 1300px) / 2);
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(src/assets/images/main-background.png);
+    //background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(src/assets/images/main-background.png);
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('@/assets/images/main-background.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
