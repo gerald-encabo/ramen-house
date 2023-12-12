@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import mainBanner from '@/assets/images/main-background.png';
 
 export const BannerSection = styled.section`
     height: 100vh;
