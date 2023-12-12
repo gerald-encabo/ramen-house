@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from './styles/GlobalStyle';
+import Main from '@/pages/Main'
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import CartSidebar from '@/components/CartSideBar/CartSidebar';
 import MenuSidebar from '@/components/MenuSideBar/MenuSidebar';
-import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from './styles/GlobalStyle';
-import Main from '@/pages/Main'
 
 const theme = {
   colors: {
