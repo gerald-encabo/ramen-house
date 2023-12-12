@@ -1,4 +1,3 @@
-// import '@/styles/globalStyle.scss';
 import { useState } from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
