@@ -30,10 +30,12 @@ const CartSidebarItemList = ({ item }: any) => {
     );
   };
 
+  // remove item from redux store
   const decrementItem = () => {
     dispatch(cartActions.removeItem(id));
   };
 
+  // delete item from redux store
   const deleteItem = () => {
     dispatch(cartActions.deleteItem(id));
   };
