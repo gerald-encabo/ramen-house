@@ -16,10 +16,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .NavbarSticky {
-        position: sticky;
+        position: sticky !important;
         top: 0;
         left: 0;
-        background-color: ${({theme}) => theme.colors.secondary};
+        background-color: ${({theme}) => theme.colors.secondary} !important;
         z-index: 999;
     }
 `
